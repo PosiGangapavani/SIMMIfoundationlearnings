@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS learnings</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+
+            #first{
+                color: blue;
+                background-color: rgb(161, 181, 195);
+
+            }
+            .parent{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 15px;
+                justify-content: space-around;
+                
+            }
+            .child{
+                
+                width: 100px;
+                height: 100px;
+                padding: 30px;
+                
+            }
+            #inner{
+                background-color: rgb(221, 221, 227);
+                color: blue;
+                padding: 15px;
+                
+            }
+            #inner1{
+                background-color: rgb(212, 241, 158);
+                color: rgb(225, 46, 130);
+                padding: 15px;
+
+            }
+            #inner2{
+                background-color: aqua;
+                color: rgb(227, 68, 71);
+                padding: 15px;
+            }
+            .shadow{
+                height: 150px;
+                width :150px;
+                background-color: rgb(127, 193, 225);
+                color: blue;
+                box-shadow: 10px 10px 5px rgb(139, 134, 134);
+
+            }
+            .one{
+                
+                background:repeating-radial-gradient(blue,green);
+                height: 150px;
+                width:150px;
+            }
+            .two{
+                background:linear-gradient(to top ,blue,green);
+                height: 150px;
+                width: 150px;
+            }
+            #spin{
+                font-size: 25px;
+                animation: spin 2s linear infinite;
+                height: 35px;
+            }
+            @keyframes spin{
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <!--CSS styling is divided into three types mainly 1.Inline 2.Internal 3.External-->
+        <h2 style="color: blue;background-color: rgb(161, 181, 195);margin-left: 456px;margin-right: 456px;text-align:center;">Flipkart</h2>
+        <h3>Example using flex</h3>
+
+        <div class="parent">
+            <div id ="inner" class="child">
+               First Div 
+            </div>
+            <div id = "inner1" class="child">
+                Second Div
+            </div>
+            <div id ="inner2" class="child">
+                Third div
+            </div>
+        </div>
+        <h3>Example for creating shadow around a box</h3>
+        <div class="shadow"></div>
+        <h3>Example using gradient</h3>
+        <div class ="one"></div><br><br>
+        <div class = "two"></div>
+        <h3>Using fontaswesome</h3>
+        <i class="fa fa-spinner" id="spin" aria-hidden="true"></i>
+
+        
+        
+    </body>
+</html>
